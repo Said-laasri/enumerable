@@ -8,7 +8,6 @@ class Mylist
   def each(&block)
     @list.each(&block)
   end
-  
 end
 
 # Create our list
