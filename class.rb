@@ -1,29 +1,22 @@
-module MyEnumerable
-  def list
-    @list ||= []
-  end
-
-  def all?
-    arr = []
-    list.each do |i|
-      arr.push(i) if yield(i)
-    end
-    puts arr.length == list.length
-  end
-
-  def any?
-    arr = []
-    list.each do |i|
-      arr.push(i) if yield(i)
-    end
-    puts !arr.empty?
-  end
-
-  def filter?
-    arr = []
-    list.each do |i|
-      arr.push(i) if yield(i)
-    end
-    puts arr.to_s
+require_relative 'module'
+class Mylist
+  include MyEnumerable
+  def initialize(*list)
+    @list = list
   end
 end
+
+# Create our list
+list = MyList.new(1, 2, 3, 4)
+#  <MyList: @list=[1, 2, 3, 4]>
+
+# all? methode
+list.all? { |e| e < 5 } # true
+
+list.all? { |e| e > 5 } # false
+# any? methode
+list.any? { |e| e == 2 } # true
+
+list.any? { |e| e == 5 } # false
+# filter? methode
+list.filter { |e| e.even? } # [2, 4]
