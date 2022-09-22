@@ -1,7 +1,6 @@
 # DECODING MORSE-CODE
 
-In this Project we are asked to decode a string with MORSE-CODE using Ruby Programming language.
-We wrote several functions to perform these tasks.
+In this project we are asked to create an enumerable object from scratch in Ruby.
 
 ## Build with
 
