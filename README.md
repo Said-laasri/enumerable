@@ -1,10 +1,19 @@
-# ENUMERABLE IN RUBY
+# ENUMERABLE OBJECT IN RUBY
 
 In this project we are asked to create an enumerable object from scratch in Ruby.
 
-## BuilT with
+## Built with
 
 > Ruby
+
+## Get Started
+To get a local copy of this program, Please follow these simple example steps.
+1. Open Git Bash.
+2. Change the current working directory to the location where you want the cloned directory. 
+ Ex: `C:User\your computer name\ cd <<your folder you want to clone to>>`
+4. Copy/Past this command :  `git clone https://github.com/Said-laasri/enumerable.git`  then press Enter
+5. Run this command `code .` to open this folder in VScode
+6. Open terminal and run this command `ruby class.rb`
 
 ## Author
 
@@ -35,7 +44,3 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-
-```
-
-```
