@@ -4,19 +4,24 @@ class Mylist
   def initialize(*list)
     @list = list
   end
+
+  def each(&block)
+    @list.each(&block)
+  end
+  
 end
 
 # Create our list
 list = Mylist.new(1, 2, 3, 4)
 #  <MyList: @list=[1, 2, 3, 4]>
 
-# all? methode
+# all? method
 list.all? { |e| e < 5 } # true
 
 list.all? { |e| e > 5 } # false
-# any? methode
+# any? method
 list.any? { |e| e == 2 } # true
 
 list.any? { |e| e == 5 } # false
-# filter? methode
+# filter? method
 list.filter?(&:even?) # [2, 4]
