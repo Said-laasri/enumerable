@@ -1,0 +1,13 @@
+module MyEnumerable
+  def list
+    @list ||= []
+  end
+
+  def all?
+    arr = []
+    list.each do |i|
+      arr.push(i) if yield(i)
+    end
+    puts arr.length == list.length
+  end
+end
